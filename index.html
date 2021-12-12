@@ -11,32 +11,47 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
     <main class="card">
-      <div class="card__header"></div>
+      <div class="card__header">
+        <img
+          src="./images/image-header-mobile.jpg"
+          class="card__image card__image--mobile"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          src="./images/image-header-mobile.jpg"
+          class="card__image card__image--desktop"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
       <div class="card__body">
-        <div class="card__title">
-          Get insights that help your business grow.
-        </div>
-        <div class="card__subtitle">
+        <h1 class="card__title">
+          Get <span class="card__title--violet">insights</span> that help your
+          business grow.
+        </h1>
+        <p class="card__subtitle">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
-        </div>
+        </p>
         <ul class="card__stats">
           <li class="card__item">
-            <span class="card_value">10k+</span>
-            <p class="card_key">companies</p>
+            <span class="card__value">10k+</span>
+            <p class="card__key">companies</p>
           </li>
           <li class="card__item">
-            <span class="card_value">314</span>
-            <p class="card_key">templates</p>
+            <span class="card__value">314</span>
+            <p class="card__key">templates</p>
           </li>
           <li class="card__item">
-            <span class="card_value">12m+</span>
-            <p class="card_key">queries</p>
+            <span class="card__value">12m+</span>
+            <p class="card__key">queries</p>
           </li>
         </ul>
       </div>
